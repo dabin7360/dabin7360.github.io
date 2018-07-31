@@ -18,12 +18,12 @@
 	</div>
 
 	<script>
-		const renderLst = () => {
-			const lst  = document.querySelector('#lst');
-			let contHtml = '';
-			let i = 1;
+		var renderLst = function(){
+			var lst  = document.querySelector('#lst');
+			var contHtml = '';
+			var i = 1;
 			while(i <= 30) {
-				contHtml += `<li class="item">${i}. xxxxxxx</li>`;
+				contHtml += '<li class="item">'+ i +'. xxxxxxx</li>';
 				i++;
 			}
 			lst.innerHTML = contHtml;
