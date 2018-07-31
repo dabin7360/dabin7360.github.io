@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>iscroll</title>
+	<style>
+		.item{
+			display: block;
+			height: 35px;
+			line-height: 35px;
+			border-bottom: 1px solid #dedede;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul id="lst"></ul>
+	</div>
+
+	<script>
+		const renderLst = () => {
+			const lst  = document.querySelector('#lst');
+			let contHtml = '';
+			let i = 1;
+			while(i <= 30) {
+				contHtml += `<li class="item">${i}. xxxxxxx</li>`;
+				i++;
+			}
+			lst.innerHTML = contHtml;
+		}
+
+		renderLst();
+	</script>
+</body>
+</html>
