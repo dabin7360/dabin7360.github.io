@@ -4,6 +4,17 @@
 	<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>iscroll</title>
 	<style>
+		html,
+		body{
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		.wrap{
+			height: 100%;
+			overflow-y: scroll;
+		}
 		.item{
 			display: block;
 			height: 35px;
@@ -22,7 +33,7 @@
 			var lst  = document.querySelector('#lst');
 			var contHtml = '';
 			var i = 1;
-			while(i <= 30) {
+			while(i <= 50) {
 				contHtml += '<li class="item">'+ i +'. xxxxxxx</li>';
 				i++;
 			}
